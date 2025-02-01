@@ -62,7 +62,7 @@ function UserRegistration({ nextStep, setUserData }) {
           required
         />
         <button type="button" className="google-btn" onClick={simulateGoogleSignIn}>
-        <img src="/google.png" alt="Google Logo" className="google-logo" width="24" height="24"/>
+        <img src="./google.png" alt="Google Logo" className="google-logo" width="24" height="24"/>
         <span>Continue with Google</span>
         </button>
         {!verificationSent ? (
