@@ -1,0 +1,240 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('/background1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2); /* Glass effect */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+/* Optional: Add a soft glow effect */
+.form-container::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.form-container h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f5f8fb;
+}
+
+/* Input Fields */
+input, textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 9px rgba(0, 123, 255, 0.5);
+}
+
+/* Buttons */
+button {
+    background-color: #0056b3;
+    color: rgb(234, 231, 231);
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.google-btn {
+    background-color: #ebf0f5;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.google-btn:hover {
+    background-color: #045ab6;
+}
+
+
+/* Verification Code Section */
+.verification-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.verification-section input {
+    flex: 1;
+}
+/* chatbot integration */
+.chatbot-integration {
+    color: #ffffff; /* White text color */
+    text-align: center;
+}
+.chatbot-integration button {
+    background-color: #007bff;
+    margin: 5px;
+}
+
+.chatbot-integration button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Scraped Data Table */
+.scraped-data {
+    margin-top: 20px;
+    color: #ebf0f5;
+}
+
+.scraped-data h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.scraped-data table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.scraped-data th, .scraped-data td {
+    padding: 12px;
+    border: 1px solid #cdcccc;
+    text-align: left;
+}
+
+.scraped-data th {
+    background-color: #809fbe;
+    font-weight: bold;
+}
+
+/* Feedback Bar */
+.feedback-bar {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.feedback-bar a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.feedback-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Success UI */
+.success-ui {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.success-ui h2 {
+    font-size: 22px;
+    color: #28a745;
+}
+
+.success-ui button {
+    margin: 10px;
+    background-color: #28a745;
+}
+
+.success-ui button:hover {
+    background-color: #218838;
+}
+
+.social-sharing {
+    margin-top: 20px;
+}
+
+.social-sharing button {
+    background-color: #007bff;
+    margin: 5px;
+}
+
+.social-sharing button:hover {
+    background-color: #0056b3;
+}
+
+/* Error UI */
+.error-ui {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error-ui h2 {
+    font-size: 22px;
+    color: #dc3545;
+}
+
+.error-ui p {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .form-container h1 {
+        font-size: 20px;
+    }
+
+    input, textarea, button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .scraped-data th, .scraped-data td {
+        padding: 10px;
+    }
+
+    .success-ui h2, .error-ui h2 {
+        font-size: 20px;
+    }
+
+    .success-ui button, .error-ui p {
+        font-size: 14px;
+    }
+}
