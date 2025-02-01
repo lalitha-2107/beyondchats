@@ -61,10 +61,7 @@ function UserRegistration({ nextStep, setUserData }) {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="button" className="google-btn" onClick={simulateGoogleSignIn}>
-        <img src="./google.png" alt="Google Logo" className="google-logo" width="24" height="24"/>
-        <span>Continue with Google</span>
-        </button>
+        
         {!verificationSent ? (
           <button type="button" onClick={sendVerificationCode}>
             Send Verification Code
@@ -81,6 +78,10 @@ function UserRegistration({ nextStep, setUserData }) {
             <button type="submit">Next</button>
           </>
         )}
+        <button type="button" className="google-btn" onClick={simulateGoogleSignIn}>
+        <img src="./google.png" alt="Google Logo" className="google-logo" width="24" height="24"/>
+        <span>Continue with Google</span>
+        </button>
       </form>
     </div>
   );
